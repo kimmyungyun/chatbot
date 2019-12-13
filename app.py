@@ -27,5 +27,9 @@ def send():
 
     return render_template('send.html')
 
+@app.route(f'/telegram', methods=['POST'])
+def telegram():
+    return 'ok', 200
+
 if __name__=='__main__':
     app.run(debug=True)
